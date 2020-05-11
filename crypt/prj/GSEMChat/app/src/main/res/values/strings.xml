@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GSEMChat</string>
+    <string name="title">GSEM</string>
+    <string name="profile_context">Profile</string>
+    <string name="settings_context">Settings</string>
+    <string name="home_context">Home</string>
+    <string name="chat_context">Chat</string>
+    <string name="settings_disclaimer_textview_text">*** DISCLAIMER *** : \n\nThe key above is stored on this device. This application provides end-to-end encryption once the password is created, it is up to you the user to keep this device physically secure. \n For friends or family to message you, they must know the PASS PHRASE that you entered or generated, so they may create the same key!</string>
+    <string name="profile_disclaimer_textview_text">*** DISCLAIMER *** : \n\nThe name/ screen name does not have to be your actual name, just one that is known by your friends. \n\nIt will be displayed next to your messages, so please be mindful on how you will be displayed as.</string>
+    <string name="key_context">Key</string>
+</resources>

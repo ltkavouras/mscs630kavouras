@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- ACTIVITY HEADER -->
+        <ImageView
+            android:id="@+id/settingsHeaderIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_gear_dark"/>
+
+        <TextView
+            android:id="@+id/settingHeaderTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="Settings" />
+
+        <!-- REQUIRED FIELDS -->
+        <TextView
+            android:id="@+id/settingInstructionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Enter a 16 character word or phrase, NO SPACES!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phraseEt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="0dp"
+                android:maxLength="16"
+                android:hint="Example: candydailyisgood"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="50dp" />
+
+            <Button
+                android:id="@+id/generateBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                android:text="Generate"
+                android:layout_marginRight="50dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/needAssistanceTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/disclaimerTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/colorRed"
+            android:text="@string/settings_disclaimer_textview_text"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorGreen"
+            android:textStyle="bold"
+            android:text="Your key is:" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:text="Your generated key will display here" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

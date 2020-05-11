@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- ACTIVITY HEADER -->
+        <ImageView
+            android:id="@+id/profileHeaderIv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_account_dark"/>
+
+        <TextView
+            android:id="@+id/profileHeaderTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="Profile" />
+
+        <!-- User Profile Instruction -->
+        <TextView
+            android:id="@+id/profileInstructionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="0dp"
+            android:text="Your name OR desired screen name" />
+
+        <!-- User Profile Container -->
+        <LinearLayout
+            android:id="@+id/profileInfoLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/usernameEt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp"
+                android:hint="Ex: John Doe" />
+
+            <Button
+                android:id="@+id/profileSaveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGreen"
+                android:onClick="saveUsername"
+                android:text="Save"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+        <!-- Disclaimer -->
+        <TextView
+            android:id="@+id/profileDisclaimerTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="0.1"
+            android:textColor="@color/colorGray"
+            android:text="@string/profile_disclaimer_textview_text" />
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

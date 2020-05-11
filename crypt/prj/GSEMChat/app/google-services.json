@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "739656842777",
+    "firebase_url": "https://gsemchat.firebaseio.com",
+    "project_id": "gsemchat",
+    "storage_bucket": "gsemchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739656842777:android:82121360102f41bcaeb488",
+        "android_client_info": {
+          "package_name": "com.example.gsemchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739656842777-hu6nkbse64761hjunourql1m8dhocna0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gsemchat",
+            "certificate_hash": "74091427979f1401ff3cfc6da86734c09a2f1184"
+          }
+        },
+        {
+          "client_id": "739656842777-mmjiu5sr72cgi1b59mv4it889f08sve0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxj06AtMreA_5XnfD-vZaDQ6tWYYrGEZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739656842777-mmjiu5sr72cgi1b59mv4it889f08sve0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
